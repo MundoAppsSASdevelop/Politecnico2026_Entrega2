@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColombiaViajero - Explora los destinos más increíbles de Colombia</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-colombia shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#" onclick="mostrarVista('inicio'); return false;">
+                <i class="bi bi-flag-fill"></i> ColombiaViajero
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mostrarVista('inicio'); return false;">
+                            <i class="bi bi-house-door"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mostrarVista('destinos'); return false;">
+                            <i class="bi bi-compass"></i> Destinos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mostrarVista('favoritos'); return false;">
+                            <i class="bi bi-suit-heart-fill"></i> Favoritos <span id="contadorFavoritos" class="badge bg-danger ms-1">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mostrarVista('contacto'); return false;">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="mostrarVista('gestionar'); return false;">
+                            <i class="bi bi-gear-fill"></i> Administrar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main class="container my-4" style="min-height: calc(100vh - 250px);">
+        <div id="contenidoPrincipal"></div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="bi bi-flag-fill"></i> ColombiaViajero</h5>
+                    <p>Descubre la magia de Colombia con los mejores destinos turísticos al mejor precio.</p>
+                    <p class="mt-2"><small>© 2025 - Todos los derechos reservados</small></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none" onclick="mostrarVista('inicio'); return false;">Inicio</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none" onclick="mostrarVista('destinos'); return false;">Destinos</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none" onclick="mostrarVista('contacto'); return false;">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p><i class="bi bi-envelope"></i> info@colombiaviajero.com<br>
+                    <i class="bi bi-phone"></i> +57 300 123 4567<br>
+                    <i class="bi bi-geo-alt"></i> Bogotá, Colombia</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p class="mb-0">
+                    <i class="bi bi-mortarboard-fill"></i> Proyecto Politécnico Grancolombiano 2026 | 
+                    Desarrollado por: <strong>Cristian Garzón</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

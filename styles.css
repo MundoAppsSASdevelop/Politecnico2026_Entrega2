@@ -1,0 +1,149 @@
+/* Estilos globales */
+body {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6d5 100%);
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Colores de Colombia */
+.bg-gradient-colombia {
+    background: linear-gradient(135deg, #0033a0 0%, #FFCD00 100%);
+}
+
+.text-colombia {
+    background: linear-gradient(135deg, #0033a0, #FFCD00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Tarjetas animadas */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background: linear-gradient(135deg, #0033a0 0%, #001a5e 100%);
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #001a5e 0%, #0033a0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #FFCD00 0%, #e6b800 100%);
+    border: none;
+    color: #0033a0;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #e6b800 0%, #FFCD00 100%);
+    transform: translateY(-2px);
+    color: #001a5e;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vista {
+    animation: fadeIn 0.6s ease;
+}
+
+/* Badge de favoritos */
+.badge-danger {
+    background-color: #dc3545;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: #FFCD00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 205, 0, 0.25);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tarjeta de detalle */
+.detalle-imagen {
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Banner de bienvenida */
+.banner-colombia {
+    background: linear-gradient(135deg, rgba(0,51,160,0.9) 0%, rgba(255,205,0,0.9) 100%),
+                url('https://picsum.photos/id/104/1920/600');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Precios en COP */
+.precio-colombia {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0033a0;
+}
+
+.precio-colombia::before {
+    content: '$';
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Efectos especiales */
+.bg-pattern {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23FFCD00" d="M50,0 L61,35 L98,35 L68,57 L79,92 L50,70 L21,92 L32,57 L2,35 L39,35 Z"/></svg>');
+    background-repeat: repeat;
+    opacity: 0.05;
+}
